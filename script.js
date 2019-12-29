@@ -1,23 +1,23 @@
 class Model {
     constructor(){
         this.todos = [
-            {
-                id: 1,
-                text: 'Buy a Benz Car',
-                complete: false
-            },
-            {
-                id: 1,
-                text: 'Buy a Mansion',
-                complete: false
-            },
+            // {
+            //     id: 1,
+            //     text: 'Buy a Benz Car',
+            //     complete: false
+            // },
+            // {
+            //     id: 2,
+            //     text: 'Buy a Mansion',
+            //     complete: false
+            // },
         ]
     }
 
     /******Handle addition of todos*******/
     addTodo(todoText){
         const todo = {
-            id: this.todos.length > 0 ? this.todos[this.todos.lenth -1].id + 1 : 1,
+            id: this.todos.length > 0 ? this.todos[this.todos.length -1].id + 1 : 1,
             text: todoText,
             complete: false
         }
