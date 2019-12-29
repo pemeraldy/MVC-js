@@ -1,16 +1,16 @@
 class Model {
     constructor(){
         this.todos = [
-            // {
-            //     id: 1,
-            //     text: 'Buy a Benz Car',
-            //     complete: false
-            // },
-            // {
-            //     id: 2,
-            //     text: 'Buy a Mansion',
-            //     complete: false
-            // },
+            {
+                id: 1,
+                text: 'Buy a Benz Car',
+                complete: false
+            },
+            {
+                id: 2,
+                text: 'Buy a Mansion',
+                complete: false
+            },
         ]
     }
 
@@ -65,7 +65,37 @@ class View{
     constructor(){
 
     }
+
+    /*helper functions*/
+    createElement(tag, className){
+        const element = document.createElement(tag)
+        if(className) element.classList.add(className)
+
+        return element
+    }
+
+    /* get element from DOM */
+    getELement(selector){
+        const element = document.querySelector(selector)
+
+        return element
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*********CONTROLLER**********/
